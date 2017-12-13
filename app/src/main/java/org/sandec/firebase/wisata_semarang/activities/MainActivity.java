@@ -1,6 +1,7 @@
 package org.sandec.firebase.wisata_semarang.activities;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -67,7 +68,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_wisata_favorit) {
 
         } else if (id == R.id.nav_peta_wisata) {
-
+            Intent pindah = new Intent(this, PetaWisataActivity.class);
+            startActivity(pindah);
         } else if (id == R.id.nav_upload_wisata) {
 
         }
